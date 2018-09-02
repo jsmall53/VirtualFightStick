@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualFightStick", "VirtualFightStick\VirtualFightStick.csproj", "{1D1A0784-3653-4725-9C84-EF1BE506F198}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualFightStick.Core", "VirtualFightStick.Core\VirtualFightStick.Core.csproj", "{8BA98BC3-A698-4C4E-A4F4-0842CA9AEDE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D1A0784-3653-4725-9C84-EF1BE506F198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D1A0784-3653-4725-9C84-EF1BE506F198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D1A0784-3653-4725-9C84-EF1BE506F198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D1A0784-3653-4725-9C84-EF1BE506F198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BA98BC3-A698-4C4E-A4F4-0842CA9AEDE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BA98BC3-A698-4C4E-A4F4-0842CA9AEDE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BA98BC3-A698-4C4E-A4F4-0842CA9AEDE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BA98BC3-A698-4C4E-A4F4-0842CA9AEDE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A57155F8-E662-46CB-B27A-A6C26EBBF9ED}
+	EndGlobalSection
+EndGlobal
