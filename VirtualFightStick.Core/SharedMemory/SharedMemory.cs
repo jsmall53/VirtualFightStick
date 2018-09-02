@@ -11,7 +11,6 @@ namespace VirtualFightStick.Core.SharedMemory
     {
         private uint _value;
         private MemoryMappedFile _sharedFile;
-        private MemoryMappedViewStream _readStream;
         private MemoryMappedViewAccessor _accessor;
 
         public SharedMemory()

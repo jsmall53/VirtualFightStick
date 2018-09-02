@@ -106,6 +106,7 @@
     <Compile Include="Dispatcher\InputDispatcher.Test.cs">
       <DependentUpon>InputDispatcher.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dispatcher\Registration\InputDispatcherRegistrationModule.cs" />
     <Compile Include="Factories\IInputFactory.cs" />
     <Compile Include="Factories\InputFactory.cs" />
     <Compile Include="Factories\Registration\InputFactoryRegistrationModule.cs" />
