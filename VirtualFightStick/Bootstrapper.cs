@@ -16,7 +16,7 @@ namespace VirtualFightStick
     
 
     public class Bootstrapper: UnityBootstrapper
-    {
+    {   
         #region Fields
 
         private readonly NLogger _logger = new NLogger("default");
