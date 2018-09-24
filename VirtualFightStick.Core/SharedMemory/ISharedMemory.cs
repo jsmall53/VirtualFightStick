@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VirtualFightStick.Core.SharedMemory
 {
-    public interface ISharedMemory
+    public interface ISharedMemory<T>
     {
         /// <summary>
         /// Opens a MemoryMappedFile with the specified name
@@ -19,6 +19,6 @@ namespace VirtualFightStick.Core.SharedMemory
         /// Reads the MemoryMappedFile and returns the value read
         /// </summary>
         /// <returns>uint value read from the file</returns>
-        uint ReadFile(); //TODO: Might want to genericize the return type
+        T ReadFile();
     }
 }
