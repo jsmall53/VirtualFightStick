@@ -8,24 +8,25 @@ using System.Threading.Tasks;
 
 namespace VirtualFightStick.Core.SharedMemory
 {
-    public class SharedMemory : ISharedMemory<uint>, IDisposable
+    public class InputMapFile : ISharedMemory<uint>, IDisposable
     {
         private readonly ILoggerFacade logger;
-        private MemoryMappedFile _sharedFile;
 
-        public SharedMemory(ILoggerFacade logger)
+        public InputMapFile(ILoggerFacade logger)
         {
             this.logger = logger;
         }
 
+        public MemoryMappedFile SharedFile { get; private set; }
+
         public bool OpenFile(string name)
         {
-            if (!string.IsNullOrEmpty(name) && _sharedFile == null)
+            if (!string.IsNullOrEmpty(name) && SharedFile == null)
             {
                 try
                 {
-                    _sharedFile = MemoryMappedFile.CreateOrOpen(name, 128, MemoryMappedFileAccess.Read);
-                    if (_sharedFile != null)
+                    SharedFile = MemoryMappedFile.CreateOrOpen(name, 128, MemoryMappedFileAccess.Read);
+                    if (SharedFile != null)
                     {
                         logger.Log($"Opened shared memory file, {name}", Category.Info, Priority.Low);
                         return true; //opened successfully
@@ -45,7 +46,7 @@ namespace VirtualFightStick.Core.SharedMemory
         {
             
             uint value = default(uint);
-            using (var accessor = _sharedFile.CreateViewAccessor(0, 128))
+            using (var accessor = SharedFile.CreateViewAccessor(0, 128))
             {
                 if (accessor.CanRead)
                 {
@@ -59,7 +60,7 @@ namespace VirtualFightStick.Core.SharedMemory
 
         public void Dispose()
         {
-            _sharedFile?.Dispose();
+            SharedFile?.Dispose();
         }
 
         #endregion

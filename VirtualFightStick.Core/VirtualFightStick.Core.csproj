@@ -130,7 +130,7 @@
     <Compile Include="Registration\IRegistrationModule.cs" />
     <Compile Include="Registration\RegistrationFactory.cs" />
     <Compile Include="SharedMemory\ISharedMemory.cs" />
-    <Compile Include="SharedMemory\SharedMemory.cs" />
+    <Compile Include="SharedMemory\InputMapFile.cs" />
     <Compile Include="Utils\NLogger.cs" />
   </ItemGroup>
   <ItemGroup>
