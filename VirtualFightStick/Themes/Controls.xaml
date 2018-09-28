@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:VirtualFightStick.Themes">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/VirtualFightStick;component/Themes/Controls.TabControl.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style BasedOn="{StaticResource VFSTabControl}" TargetType="{x:Type TabControl}" />
+    <Style BasedOn="{StaticResource VFSTabItem}" TargetType="{x:Type TabItem}" />
+</ResourceDictionary>

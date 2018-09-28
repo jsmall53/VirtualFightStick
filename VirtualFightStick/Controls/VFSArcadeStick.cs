@@ -13,16 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace VirtualFightStick
+namespace VirtualFightStick.Controls
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow
+    // TODO: 
+    public class VFSArcadeStick : Control
     {
-        public MainWindow()
+        static VFSArcadeStick()
         {
-            InitializeComponent();
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(VFSArcadeStick), new FrameworkPropertyMetadata(typeof(VFSArcadeStick)));
         }
     }
 }

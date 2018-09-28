@@ -132,6 +132,7 @@
     <Compile Include="SharedMemory\ISharedMemory.cs" />
     <Compile Include="SharedMemory\InputMapFile.cs" />
     <Compile Include="Utils\NLogger.cs" />
+    <Compile Include="Utils\Win32FunctionWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

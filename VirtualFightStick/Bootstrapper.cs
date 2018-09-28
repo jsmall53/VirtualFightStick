@@ -13,8 +13,6 @@ using VirtualFightStick.Core.Utils;
 
 namespace VirtualFightStick
 {
-    
-
     public class Bootstrapper: UnityBootstrapper
     {   
         #region Fields
