@@ -18,7 +18,9 @@
             <TabItem Header="Controller">
                 <views:FightStick />
             </TabItem>
-            <TabItem Header="Setup">Settings View</TabItem>
+            <TabItem Header="Setup">
+                <views:Settings />
+            </TabItem>
         </TabControl>
     </DockPanel>
 </controls:MetroWindow>

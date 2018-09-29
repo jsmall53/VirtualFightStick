@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="VirtualFightStick.Views.Settings"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:VirtualFightStick.Views"
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:mdix="http://materialdesigninxaml.net/winfx/xaml/themes"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             Foreground="{DynamicResource MaterialDesignBody}">
+    <Grid ShowGridLines="True">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <!--
+        1) Application Selection - Select -> popup w/ spinner "Syncing" -> Synced to "Application Name" Snackbar message
+        2) Input Mapping
+        3) 
+        -->
+
+        <ComboBox mdix:HintAssist.Hint="Application"
+                  Margin="16">
+            <ComboBoxItem>
+                Application 1
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Application 2
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Application 3
+            </ComboBoxItem>
+        </ComboBox>
+        
+    </Grid>
+</UserControl>

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualFightStick.InputServ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualFightStick.ProcessManagement", "VirtualFightStick.ProcessManagement\VirtualFightStick.ProcessManagement.csproj", "{0A5F6C5C-38FA-468B-B94A-C1083F36B90D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualFightStick.Ioc", "VirutalFightStick.Ioc\VirtualFightStick.Ioc.csproj", "{88136E78-A66E-4FF4-BF2E-35605B363572}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0A5F6C5C-38FA-468B-B94A-C1083F36B90D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A5F6C5C-38FA-468B-B94A-C1083F36B90D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A5F6C5C-38FA-468B-B94A-C1083F36B90D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88136E78-A66E-4FF4-BF2E-35605B363572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88136E78-A66E-4FF4-BF2E-35605B363572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88136E78-A66E-4FF4-BF2E-35605B363572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88136E78-A66E-4FF4-BF2E-35605B363572}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

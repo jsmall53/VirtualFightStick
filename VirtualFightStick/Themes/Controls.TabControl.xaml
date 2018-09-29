@@ -5,7 +5,7 @@
     
     <Style x:Key="VFSTabControl" TargetType="{x:Type TabControl}">
         <Setter Property="Background" Value="{StaticResource PrimaryHueMidBrush}"/>
-        <Setter Property="Foreground" Value="{StaticResource PrimaryHueMidForegroundBrush}" />
+        <Setter Property="Foreground" Value="{StaticResource MaterialDesignBody}" />
         <Setter Property="Padding" Value="8" />
         <Setter Property="Template">
             <Setter.Value>
@@ -65,7 +65,6 @@
                                             ContentStringFormat="{TemplateBinding HeaderStringFormat}"
                                             ContentTemplate="{TemplateBinding HeaderTemplate}"
                                             ContentTemplateSelector="{TemplateBinding HeaderTemplateSelector}"
-                                            Foreground="{TemplateBinding Foreground}"
                                             FontSize="{TemplateBinding FontSize}"
                                             SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
                                             UseLayoutRounding="False" />

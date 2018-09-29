@@ -133,12 +133,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controls\VFSArcadeStick.cs" />
     <Compile Include="Controls\VFSButton.cs" />
     <Compile Include="Converters\VFSInnerPlacementConverter.cs" />
     <Compile Include="Converters\VFSInnerRadiusConverter.cs" />
     <Compile Include="ViewModels\FightStickViewModel.cs" />
+    <Compile Include="ViewModels\SettingsViewModel.cs" />
     <Compile Include="Views\FightStick.xaml.cs">
       <DependentUpon>FightStick.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -166,6 +171,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\FightStick.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Settings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -207,6 +216,18 @@
     <ProjectReference Include="..\VirtualFightStick.Core\VirtualFightStick.Core.csproj">
       <Project>{8BA98BC3-A698-4C4E-A4F4-0842CA9AEDE3}</Project>
       <Name>VirtualFightStick.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VirtualFightStick.InputService\VirtualFightStick.InputService.csproj">
+      <Project>{36632ed2-c2f4-4c4d-8507-6dc1fcb0cc8a}</Project>
+      <Name>VirtualFightStick.InputService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VirtualFightStick.ProcessManagement\VirtualFightStick.ProcessManagement.csproj">
+      <Project>{0a5f6c5c-38fa-468b-b94a-c1083f36b90d}</Project>
+      <Name>VirtualFightStick.ProcessManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VirutalFightStick.Ioc\VirtualFightStick.Ioc.csproj">
+      <Project>{88136e78-a66e-4ff4-bf2e-35605b363572}</Project>
+      <Name>VirtualFightStick.Ioc</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

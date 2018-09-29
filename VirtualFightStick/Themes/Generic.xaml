@@ -70,7 +70,7 @@
         </Setter>
     </Style>
 
-    <Style TargetType="{x:Type local:VFSArcadeStick}">
+    <!--<Style TargetType="{x:Type local:VFSArcadeStick}">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:VFSArcadeStick}">
@@ -81,5 +81,5 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-    </Style>
+    </Style>-->
 </ResourceDictionary>
