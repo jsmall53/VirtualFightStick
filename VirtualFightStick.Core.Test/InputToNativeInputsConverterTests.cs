@@ -1,18 +1,20 @@
-#if DEBUG || TEST_BEHIND
-
-// place using directives here to properly exclude the entire file based on #if directive
-using System;
+﻿using System;
 using System.Collections.Generic;
-using Xunit;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using NUnit;
+using NUnit.Framework;
 using VirtualFightStick.Core.NativeInput;
 using VirtualFightStick.Core.Converters;
 using VirtualFightStick.Core.Factories;
 using VirtualFightStick.Core.Models;
 
-namespace Test.VirtualFightStick.Core.Converters
+namespace VirtualFightStick.Core.Test.Converters
 {
-   public class InputToNativeInputsConverterTests
-   {
+    [TestFixture]
+    public class InputToNativeInputsConverterTests
+    {
         private IInputFactory inputfactory = new InputFactory();
         public List<IInput> CreateInputsList()
         {
@@ -24,7 +26,7 @@ namespace Test.VirtualFightStick.Core.Converters
             return inputList;
         }
 
-        [Fact]
+        [Test]
         public void ConvertInputsToNativeNotNull()
         {
             var inputList = CreateInputsList();
@@ -33,5 +35,3 @@ namespace Test.VirtualFightStick.Core.Converters
         }
     }
 }
-
-#endif

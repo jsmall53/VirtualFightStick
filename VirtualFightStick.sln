@@ -13,6 +13,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualFightStick.ProcessMa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualFightStick.Ioc", "VirutalFightStick.Ioc\VirtualFightStick.Ioc.csproj", "{88136E78-A66E-4FF4-BF2E-35605B363572}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualFightStick.Test", "VirtualFightStick.Test\VirtualFightStick.Test.csproj", "{1EF3A71B-BD14-48BB-9D32-04961B1EF23D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualFightStick.ProcessManagement.Test", "VirtualFightStick.ProcessManagement.Test\VirtualFightStick.ProcessManagement.Test.csproj", "{B89E8E32-A61B-4A18-8D5A-40ED091CC588}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualFightStick.Core.Test", "VirtualFightStick.Core.Test\VirtualFightStick.Core.Test.csproj", "{226CB6CB-1A62-44E9-8FDD-29F08F303DA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +45,18 @@ Global
 		{88136E78-A66E-4FF4-BF2E-35605B363572}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88136E78-A66E-4FF4-BF2E-35605B363572}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88136E78-A66E-4FF4-BF2E-35605B363572}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EF3A71B-BD14-48BB-9D32-04961B1EF23D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EF3A71B-BD14-48BB-9D32-04961B1EF23D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EF3A71B-BD14-48BB-9D32-04961B1EF23D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EF3A71B-BD14-48BB-9D32-04961B1EF23D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B89E8E32-A61B-4A18-8D5A-40ED091CC588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B89E8E32-A61B-4A18-8D5A-40ED091CC588}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B89E8E32-A61B-4A18-8D5A-40ED091CC588}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B89E8E32-A61B-4A18-8D5A-40ED091CC588}.Release|Any CPU.Build.0 = Release|Any CPU
+		{226CB6CB-1A62-44E9-8FDD-29F08F303DA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{226CB6CB-1A62-44E9-8FDD-29F08F303DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{226CB6CB-1A62-44E9-8FDD-29F08F303DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{226CB6CB-1A62-44E9-8FDD-29F08F303DA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

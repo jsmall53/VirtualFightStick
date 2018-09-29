@@ -1,29 +1,29 @@
-#if DEBUG || TEST_BEHIND
-
-// place using directives here to properly exclude the entire file based on #if directive
+﻿using NUnit.Framework;
 using System;
-using Xunit;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using VirtualFightStick.Core.NativeInput;
 
-namespace Test.VirtualFightStick.Core.NativeInputTests
+namespace VirtualFightStick.Core.Test.NativeInputTests
 {
-   public class NativeInputTests
-   {
-        [Fact]
+    [TestFixture]
+    public class NativeInputTests
+    {
+        [Test]
         public void SendZeroInputs()
         {
             List<INPUT> inputs = new List<INPUT>();
             int successfulInputs;
 
-            successfulInputs = NativeInput.SendInputs(inputs.ToArray());
-            Assert.Equal(0, successfulInputs);
+            successfulInputs = NativeInput.NativeInput.SendInputs(inputs.ToArray());
+            Assert.AreEqual(0, successfulInputs);
         }
 
-        [Theory]
-        [InlineData(1)]
-        [InlineData(2)]
-        [InlineData(3)]
+        [TestCase(1)]
+        [TestCase(2)]
+        [TestCase(3)]
         public void SendNInputs(int numInputs)
         {
             int successfulInputs;
@@ -41,10 +41,8 @@ namespace Test.VirtualFightStick.Core.NativeInputTests
             {
                 inputs.Add(testInput);
             }
-            successfulInputs = NativeInput.SendInputs(inputs.ToArray());
-            Assert.Equal(numInputs, successfulInputs);
+            successfulInputs = NativeInput.NativeInput.SendInputs(inputs.ToArray());
+            Assert.AreEqual(numInputs, successfulInputs);
         }
     }
 }
-
-#endif
