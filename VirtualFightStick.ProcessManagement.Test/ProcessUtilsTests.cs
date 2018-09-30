@@ -21,7 +21,15 @@ namespace VirtualFightStick.ProcessManagement.Test
             Assert.IsTrue(processes.Count() > 0);
             foreach (var process in processes)
             {
-                Console.WriteLine($"{Path.GetFileName(process.MainModule.FileName)}: {process.ProcessName}: {process.Id}");
+                try
+                {
+                    Console.WriteLine($"{process.MainWindowTitle}: {process.ProcessName}: {process.Id}");
+                }
+                catch (Exception ex)
+                {
+
+                }
+                
             }
         }
     }

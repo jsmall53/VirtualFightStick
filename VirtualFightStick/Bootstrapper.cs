@@ -11,6 +11,7 @@ using System.Windows;
 using VirtualFightStick.Core.Registration;
 using VirtualFightStick.Core.Utils;
 using VirtualFightStick.Ioc;
+using VirtualFightStick.Ioc.Configuration;
 
 namespace VirtualFightStick
 {
@@ -38,7 +39,11 @@ namespace VirtualFightStick
 
         protected override void ConfigureContainer()
         {
+            ReflectionUtils.ForceLoadAssembliesBySchema("VirtualFightStick.*.dll");
+
             base.ConfigureContainer();
+
+            UnityConfiguration.ConfigureContainer(Container);
 
             RegistrationFactory.BootstrapApplication(Container);
         }
@@ -52,8 +57,6 @@ namespace VirtualFightStick
         protected override void InitializeModules()
         {
             Logger.Log("Initializing Modules", Category.Info, Priority.Low);
-
-            ReflectionUtils.ForceLoadAssembliesBySchema("VirtualFightStick.*.dll");
 
             base.InitializeModules();
             //

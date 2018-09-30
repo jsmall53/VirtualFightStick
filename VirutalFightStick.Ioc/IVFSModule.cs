@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Practices.Unity;
 
-namespace VirutalFightStick.Ioc
+namespace VirtualFightStick.Ioc
 {
     public interface IVFSModule
     {
