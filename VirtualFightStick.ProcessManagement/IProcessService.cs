@@ -9,9 +9,10 @@ namespace VirtualFightStick.ProcessManagement
 {
     public interface IProcessService
     {
+        Process SyncedProcess { get; }
         void UpdateActiveProcesses();
+        bool SyncToProcess(Process process);
         event EventHandler<ActiveProcessesUpdatedEventArgs> ActiveProcessesUpdated;
+        event EventHandler<SyncProcessEventArgs> SyncProcess;
     }
-
-    
 }

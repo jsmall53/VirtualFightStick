@@ -32,5 +32,16 @@ namespace VirtualFightStick.ProcessManagement.Test
                 
             }
         }
+
+        [Test]
+        public void GetProcessesWithWindowTitles()
+        {
+            var processes = ProcessUtils.GetProcessesWithWindowTitles();
+            foreach (var process in processes)
+            {
+                Assert.IsFalse(string.IsNullOrEmpty(process.MainWindowTitle));
+                Console.WriteLine($"{process.MainWindowTitle}: {process.ProcessName}: {process.Id}");
+            }
+        }
     }
 }

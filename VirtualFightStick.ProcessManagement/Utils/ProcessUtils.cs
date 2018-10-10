@@ -13,5 +13,13 @@ namespace VirtualFightStick.ProcessManagement.Utils
         {
             return Process.GetProcesses();
         }
+
+        public static IEnumerable<Process> GetProcessesWithWindowTitles()
+        {
+            var processes = GetProcesses();
+
+            // filter processes by those that have a main window title
+            return processes.Where(p => !string.IsNullOrEmpty(p.MainWindowTitle));
+        }
     }
 }

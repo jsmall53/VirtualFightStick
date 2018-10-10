@@ -25,16 +25,15 @@
         -->
 
         <ComboBox mdix:HintAssist.Hint="Application"
-                  Margin="16">
-            <ComboBoxItem>
-                Application 1
-            </ComboBoxItem>
-            <ComboBoxItem>
-                Application 2
-            </ComboBoxItem>
-            <ComboBoxItem>
-                Application 3
-            </ComboBoxItem>
+                  IsEditable="False"
+                  Margin="16"
+                  ItemsSource="{Binding Mode=OneWay, Path=Processes}"
+                  SelectedItem="{Binding SelectedProcess, Mode=TwoWay}">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding MainWindowTitle}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
         </ComboBox>
         
     </Grid>

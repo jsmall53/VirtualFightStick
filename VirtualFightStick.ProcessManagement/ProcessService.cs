@@ -11,30 +11,44 @@ namespace VirtualFightStick.ProcessManagement
     public class ProcessService : IProcessService
     {
         public event EventHandler<ActiveProcessesUpdatedEventArgs> ActiveProcessesUpdated;
+        public event EventHandler<SyncProcessEventArgs> SyncProcess;
 
         public ProcessService() { }
 
+        public Process SyncedProcess { get; private set; }
+
         public void UpdateActiveProcesses()
         {
-            var activeProcesses = ProcessUtils.GetProcesses();
+            var activeProcesses = ProcessUtils.GetProcessesWithWindowTitles();
             OnActiveProcessesUpdated(activeProcesses);
         }
 
-        private void OnActiveProcessesUpdated(Process[] processes)
+        public bool SyncToProcess(Process process)
+        {
+            // sync to the process (idk if theres something I wanna do to sync timing here)
+            if (process == null || process.MainWindowHandle == null)
+            {
+                throw new ApplicationException($"Cannot sync with process {process}");
+            }
+
+            if (SyncedProcess == process)
+            {
+                // already synced with this process
+                return false;
+            }
+
+            SyncedProcess = process;
+            return true;
+        }
+
+        private void OnActiveProcessesUpdated(IEnumerable<Process> processes)
         {
             ActiveProcessesUpdated?.Invoke(this, new ActiveProcessesUpdatedEventArgs(processes));
         }
-    }
 
-    public class ActiveProcessesUpdatedEventArgs : EventArgs
-    {
-        private Process[] activeProcesses = null;
-
-        public ActiveProcessesUpdatedEventArgs(Process[] processes)
+        private void OnSyncProcess(Process process)
         {
-            activeProcesses = processes;
+            SyncProcess?.Invoke(this, new SyncProcessEventArgs(process));
         }
-
-        public IEnumerable<Process> Processes { get => activeProcesses; }
     }
 }

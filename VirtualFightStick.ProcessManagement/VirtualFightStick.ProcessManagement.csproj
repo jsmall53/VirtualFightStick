@@ -53,10 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActiveProcessesUpdatedEventArgs.cs" />
     <Compile Include="IProcessService.cs" />
     <Compile Include="Module\ProcessManagementModule.cs" />
     <Compile Include="ProcessService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SyncProcessEventArgs.cs" />
     <Compile Include="Utils\ProcessUtils.cs" />
   </ItemGroup>
   <ItemGroup />
