@@ -8,7 +8,7 @@
              xmlns:mdix="http://materialdesigninxaml.net/winfx/xaml/themes"
              prism:ViewModelLocator.AutoWireViewModel="True"
              Foreground="{DynamicResource MaterialDesignBody}">
-    <Grid ShowGridLines="True">
+    <Grid ShowGridLines="False">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -24,17 +24,20 @@
         3) 
         -->
 
-        <ComboBox mdix:HintAssist.Hint="Application"
-                  IsEditable="False"
-                  Margin="16"
-                  ItemsSource="{Binding Mode=OneWay, Path=Processes}"
-                  SelectedItem="{Binding SelectedProcess, Mode=TwoWay}">
-            <ComboBox.ItemTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding MainWindowTitle}"/>
-                </DataTemplate>
-            </ComboBox.ItemTemplate>
-        </ComboBox>
-        
+        <StackPanel Grid.Row="0">
+            <ComboBox mdix:HintAssist.Hint="Application"
+                      IsEditable="False"
+                      Margin="16"
+                      ItemsSource="{Binding Mode=OneWay, Path=Processes}"
+                      SelectedItem="{Binding SelectedProcess, Mode=TwoWay}">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding MainWindowTitle}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <Button Width="175" HorizontalAlignment="Right" Command="{Binding SyncToProcess}">Sync</Button>
+        </StackPanel>
+
     </Grid>
 </UserControl>

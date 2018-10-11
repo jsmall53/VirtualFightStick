@@ -12,6 +12,7 @@ namespace VirtualFightStick.ProcessManagement
         Process SyncedProcess { get; }
         void UpdateActiveProcesses();
         bool SyncToProcess(Process process);
+        Task<bool> SyncToProcessAsync(Process process);
         event EventHandler<ActiveProcessesUpdatedEventArgs> ActiveProcessesUpdated;
         event EventHandler<SyncProcessEventArgs> SyncProcess;
     }

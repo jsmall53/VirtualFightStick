@@ -38,7 +38,13 @@ namespace VirtualFightStick.ProcessManagement
             }
 
             SyncedProcess = process;
+            OnSyncProcess(SyncedProcess);
             return true;
+        }
+
+        public Task<bool> SyncToProcessAsync(Process process)
+        {
+            throw new NotImplementedException();
         }
 
         private void OnActiveProcessesUpdated(IEnumerable<Process> processes)
