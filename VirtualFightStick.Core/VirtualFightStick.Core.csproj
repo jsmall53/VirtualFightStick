@@ -98,6 +98,9 @@
     <Compile Include="Factories\IInputFactory.cs" />
     <Compile Include="Factories\InputFactory.cs" />
     <Compile Include="Factories\Registration\InputFactoryRegistrationModule.cs" />
+    <Compile Include="Logger\IVFSLogger.cs" />
+    <Compile Include="Logger\VFSLogger.cs" />
+    <Compile Include="Logger\Registration\LoggerRegistration.cs" />
     <Compile Include="Models\IInput.cs" />
     <Compile Include="Models\Input.cs" />
     <Compile Include="NativeInput\NativeInput.cs" />
@@ -114,5 +117,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

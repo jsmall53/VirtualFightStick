@@ -61,11 +61,10 @@
     <Compile Include="SyncProcessEventArgs.cs" />
     <Compile Include="Utils\ProcessUtils.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\VirutalFightStick.Ioc\VirtualFightStick.Ioc.csproj">
-      <Project>{88136e78-a66e-4ff4-bf2e-35605b363572}</Project>
-      <Name>VirtualFightStick.Ioc</Name>
+    <ProjectReference Include="..\VirtualFightStick.Core\VirtualFightStick.Core.csproj">
+      <Project>{8ba98bc3-a698-4c4e-a4f4-0842ca9aede3}</Project>
+      <Name>VirtualFightStick.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

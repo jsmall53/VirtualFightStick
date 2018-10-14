@@ -36,7 +36,10 @@
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
             </ComboBox>
-            <Button Width="175" HorizontalAlignment="Right" Command="{Binding SyncToProcess}">Sync</Button>
+            <Button Command="{Binding SyncToProcess}"
+                    Width="175" 
+                    Margin="16 0 16 16"
+                    HorizontalAlignment="Right" >Sync</Button>
         </StackPanel>
 
     </Grid>

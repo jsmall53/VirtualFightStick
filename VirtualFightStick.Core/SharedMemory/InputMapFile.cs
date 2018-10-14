@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 
 namespace VirtualFightStick.Core.SharedMemory
 {
+    // TODO: Create an interface so that I can swap out the shared memory file for a websocket connection
+
     public class InputMapFile : ISharedMemory<uint>, IDisposable
     {
         private readonly ILoggerFacade logger;
@@ -44,7 +46,6 @@ namespace VirtualFightStick.Core.SharedMemory
 
         public uint ReadFile()
         {
-            
             uint value = default(uint);
             using (var accessor = SharedFile.CreateViewAccessor(0, 128))
             {

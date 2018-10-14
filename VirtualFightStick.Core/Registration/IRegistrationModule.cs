@@ -2,7 +2,7 @@
 
 namespace VirtualFightStick.Core.Registration
 {
-    interface IRegistrationModule
+    public interface IRegistrationModule
     {
         void Register(IUnityContainer container);
     }

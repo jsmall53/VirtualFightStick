@@ -43,7 +43,7 @@ namespace VirtualFightStick
 
             base.ConfigureContainer();
 
-            UnityConfiguration.ConfigureContainer(Container);
+            //UnityConfiguration.ConfigureContainer(Container);
 
             RegistrationFactory.BootstrapApplication(Container);
         }

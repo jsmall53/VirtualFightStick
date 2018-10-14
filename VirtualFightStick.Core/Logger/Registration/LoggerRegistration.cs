@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 using Microsoft.Practices.Unity;
 using VirtualFightStick.Core.Registration;
 
-namespace VirtualFightStick.ProcessManagement.Module
+namespace VirtualFightStick.Core.Logger.Registration
 {
-    public class ProcessManagementModule : IRegistrationModule
+    public class LoggerRegistration : IRegistrationModule
     {
         public void Register(IUnityContainer container)
         {
-            container.RegisterType<IProcessService, ProcessService>(new ContainerControlledLifetimeManager());
+            container.RegisterType<IVFSLogger, VFSLogger>(new ContainerControlledLifetimeManager());
         }
     }
 }
