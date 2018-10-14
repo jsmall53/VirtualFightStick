@@ -1,1 +1,1 @@
-Porting over the beginnings of a rewrite of this project to a wpf application.
+Virtual Fight Stick is an application which will be used to dispatch and visualize the inputs of a bot player. It is written in C# using WPF and runs on Windows platforms and targets .NET Runtime 4.6.1.
