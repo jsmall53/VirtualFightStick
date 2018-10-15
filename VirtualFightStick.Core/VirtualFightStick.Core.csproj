@@ -98,6 +98,7 @@
     <Compile Include="Factories\IInputFactory.cs" />
     <Compile Include="Factories\InputFactory.cs" />
     <Compile Include="Factories\Registration\InputFactoryRegistrationModule.cs" />
+    <Compile Include="IInputHandler.cs" />
     <Compile Include="Logger\IVFSLogger.cs" />
     <Compile Include="Logger\VFSLogger.cs" />
     <Compile Include="Logger\Registration\LoggerRegistration.cs" />

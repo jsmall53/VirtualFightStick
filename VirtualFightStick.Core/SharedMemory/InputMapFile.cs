@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace VirtualFightStick.Core.SharedMemory
 {
-    // TODO: Create an interface so that I can swap out the shared memory file for a websocket connection
+    // TODO: Create an interface so that I can swap out the shared memory file for a websocket connection (use IInputHandler interface).
 
     public class InputMapFile : ISharedMemory<uint>, IDisposable
     {
