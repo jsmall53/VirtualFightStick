@@ -201,10 +201,6 @@
       <Project>{8BA98BC3-A698-4C4E-A4F4-0842CA9AEDE3}</Project>
       <Name>VirtualFightStick.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\VirtualFightStick.InputService\VirtualFightStick.InputService.csproj">
-      <Project>{36632ed2-c2f4-4c4d-8507-6dc1fcb0cc8a}</Project>
-      <Name>VirtualFightStick.InputService</Name>
-    </ProjectReference>
     <ProjectReference Include="..\VirtualFightStick.ProcessManagement\VirtualFightStick.ProcessManagement.csproj">
       <Project>{0a5f6c5c-38fa-468b-b94a-c1083f36b90d}</Project>
       <Name>VirtualFightStick.ProcessManagement</Name>

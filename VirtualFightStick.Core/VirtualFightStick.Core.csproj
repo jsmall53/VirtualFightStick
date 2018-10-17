@@ -99,6 +99,7 @@
     <Compile Include="Factories\InputFactory.cs" />
     <Compile Include="Factories\Registration\InputFactoryRegistrationModule.cs" />
     <Compile Include="IInputHandler.cs" />
+    <Compile Include="InputService.cs" />
     <Compile Include="Logger\IVFSLogger.cs" />
     <Compile Include="Logger\VFSLogger.cs" />
     <Compile Include="Logger\Registration\LoggerRegistration.cs" />
@@ -107,6 +108,7 @@
     <Compile Include="NativeInput\NativeInput.cs" />
     <Compile Include="NativeInput\NativeInputDefines.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reader\InputReader.cs" />
     <Compile Include="Registration\IRegistrationFactory.cs" />
     <Compile Include="Registration\IRegistrationModule.cs" />
     <Compile Include="Registration\RegistrationFactory.cs" />

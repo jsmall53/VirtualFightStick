@@ -27,7 +27,7 @@ namespace VirtualFightStick.ProcessManagement.Test
                 }
                 catch (Exception ex)
                 {
-
+                    throw ex;
                 }
                 
             }

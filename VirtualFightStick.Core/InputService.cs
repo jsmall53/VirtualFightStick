@@ -8,7 +8,7 @@ using VirtualFightStick.Core.Dispatcher;
 using VirtualFightStick.Core.Factories;
 using VirtualFightStick.Core.Models;
 
-namespace VirtualFightStick.InputService
+namespace VirtualFightStick
 {
     public class InputsSentEventArgs : EventArgs
     {
